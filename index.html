@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slango | تعلّم السلانج والإيديمز الحقيقية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#">Slango</a>
+  <nav>
+    <a href="#library" data-i18n="navLib"></a>
+    <a href="#quiz" data-i18n="navQuiz"></a>
+    <button id="savedBtn" aria-pressed="false"><span data-i18n="navSaved"></span> <span id="savedCount">0</span></button>
+    <button id="langBtn" class="lang" type="button" data-i18n-aria="langAria"></button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1 data-i18n="heroTitle"></h1>
+    <p data-i18n="heroText"></p>
+    <a class="btn" href="#library" data-i18n="start"></a>
+  </div>
+  <div class="bubble-wrap">
+    <button class="bubble" id="heroBubble" aria-live="polite">
+      <small id="hType"></small>
+      <strong id="hEn" dir="ltr"></strong>
+      <span id="hAr" dir="rtl"></span>
+    </button>
+    <p class="hint" data-i18n="hint"></p>
+  </div>
+</section>
+
+<main>
+<section id="library">
+  <h2><span data-i18n="libTitle"></span> <small id="count"></small></h2>
+  <div class="tools">
+    <input id="search" type="search" data-i18n-ph="searchPh" data-i18n-aria="searchAria">
+    <div class="chips" id="typeChips" role="group" data-i18n-aria="typeAria">
+      <button class="chip on" data-v="all" data-i18n="all"></button>
+      <button class="chip" data-v="slang">Slang</button>
+      <button class="chip" data-v="idiom">Idioms</button>
+    </div>
+    <div class="chips" id="regChips" role="group" data-i18n-aria="regAria">
+      <button class="chip on" data-v="all" data-i18n="allReg"></button>
+      <button class="chip" data-v="US" data-i18n="US"></button>
+      <button class="chip" data-v="UK" data-i18n="UK"></button>
+    </div>
+  </div>
+  <div id="grid" class="grid"></div>
+  <button id="more" class="btn" hidden></button>
+  <p id="empty" class="empty" hidden data-i18n="empty"></p>
+</section>
+
+<section id="quiz">
+  <h2 data-i18n="quizTitle"></h2>
+  <div class="quiz-box">
+    <p id="qScore" class="score"></p>
+    <h3 id="qText" dir="ltr"></h3>
+    <div id="qOpts" class="opts"></div>
+    <button class="btn" id="qNext" hidden data-i18n="next"></button>
+  </div>
+</section>
+</main>
+<footer data-i18n="footer"></footer>
+<script src="data.js"></script>
+<script src="data-02.js"></script>
+<script src="data-03.js"></script>
+<script src="data-04.js"></script>
+<script src="data-05.js"></script>
+<script src="data-06.js"></script>
+<script src="data-07.js"></script>
+<script src="data-08.js"></script>
+<script src="data-09.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
