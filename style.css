@@ -94,3 +94,7 @@ h2 small{font-size:16px;opacity:.6;font-weight:400}
 nav button.lang{background:transparent;color:var(--ink);border:2px solid var(--ink);padding:4px 14px;font-weight:800;letter-spacing:.02em}
 .ar-text{text-align:start}
 .opts button[dir=rtl]{text-align:right}
+
+/* ===== إصلاحات ===== */
+[hidden]{display:none!important}
+@media(max-width:640px){.tools{flex-wrap:nowrap}.chips{max-width:100%}}
